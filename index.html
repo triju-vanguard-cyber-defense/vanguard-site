@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanguard Cyber Defense — Agent Runtime Security Audits</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Segoe UI', system-ui, sans-serif; background: #0a0e14; color: #e6e6e6; line-height: 1.6; }
+  .container { max-width: 860px; margin: 0 auto; padding: 60px 24px; }
+  .tag { color: #4ade80; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+  h1 { font-size: 42px; line-height: 1.15; margin: 16px 0 20px; font-weight: 700; }
+  h1 span { color: #4ade80; }
+  .sub { font-size: 18px; color: #9aa4b2; max-width: 640px; margin-bottom: 40px; }
+  .card { background: #11161f; border: 1px solid #1f2937; border-radius: 12px; padding: 28px; margin-bottom: 20px; }
+  .card h3 { color: #fff; margin-bottom: 8px; font-size: 19px; }
+  .card p { color: #9aa4b2; font-size: 15px; }
+  .price { color: #4ade80; font-weight: 700; font-size: 22px; float: right; }
+  .proof { display: flex; flex-wrap: wrap; gap: 10px; margin: 30px 0; }
+  .badge { background: #11161f; border: 1px solid #1f2937; padding: 8px 14px; border-radius: 20px; font-size: 13px; color: #9aa4b2; }
+  .badge b { color: #e6e6e6; }
+  .cta { display: inline-block; background: #4ade80; color: #0a0e14; font-weight: 700; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 16px; margin-top: 10px; }
+  .cta:hover { background: #22c55e; }
+  h2 { font-size: 26px; margin: 48px 0 20px; }
+  ul { color: #9aa4b2; padding-left: 20px; font-size: 15px; }
+  li { margin-bottom: 8px; }
+  .footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #1f2937; color: #6b7280; font-size: 13px; }
+  a { color: #4ade80; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="tag">Vanguard Cyber Defense</div>
+  <h1>Your AI agent has security holes.<br><span>We find them before attackers do.</span></h1>
+  <p class="sub">Fixed-scope, 5-day security audits for early-stage teams building on CrewAI, AutoGen, LangGraph, OpenHands, and custom agent stacks. Run by an independent researcher who has disclosed vulnerabilities in the frameworks you build on.</p>
+
+  <div class="proof">
+    <div class="badge"><b>CrewAI</b> — SSRF disclosed (VSA-2026-002)</div>
+    <div class="badge"><b>OpenHands</b> — parser desync (VSA-2026-003)</div>
+    <div class="badge"><b>Dify</b> — config fail-open (VSA-2026-004)</div>
+    <div class="badge"><b>Microsoft AutoGen</b> — MSRC case VULN-231190</div>
+  </div>
+
+  <h2>What you get</h2>
+  <div class="card">
+    <span class="price">$800</span>
+    <h3>Starter Audit</h3>
+    <p>Source review of your agent stack. SSRF, tool-call, injection, and config checklist. 1-page findings report with code-level fixes. Delivered in 3 days.</p>
+  </div>
+  <div class="card">
+    <span class="price">$2,500</span>
+    <h3>Standard Audit</h3>
+    <p>Full adversarial engagement: code review + live red-team of your agent endpoints. Prompt injection suite, tool boundary tests, sandbox escape attempts. Full report + fix guidance + walkthrough call. 5 days.</p>
+  </div>
+  <div class="card">
+    <span class="price">$1,000/mo</span>
+    <h3>Retainer</h3>
+    <p>Monthly re-audit, new-dependency review, and a direct line to your auditor. For teams shipping agent features fast.</p>
+  </div>
+
+  <h2>What we test</h2>
+  <ul>
+    <li><b>Prompt injection</b> — direct, indirect (via retrieved docs/URLs), and cross-agent</li>
+    <li><b>SSRF &amp; network boundaries</b> — redirect chains into internal IPs, cloud metadata endpoints</li>
+    <li><b>Code execution escapes</b> — path traversal in executors, Docker isolation gaps</li>
+    <li><b>State &amp; parser integrity</b> — forged completion markers, checkpoint deserialization</li>
+    <li><b>Config fail-open</b> — empty env vars silently disabling security controls</li>
+    <li><b>Secrets hygiene</b> — key leakage through tool outputs, logs, and LLM context</li>
+  </ul>
+
+  <h2>Why us</h2>
+  <ul>
+    <li>We don't sell a scanner. We do the research — our disclosed advisories are public proof.</li>
+    <li>Fixed price, fixed scope, 5-day delivery. No procurement process.</li>
+    <li>Every finding ships with a working reproduction and a code-level fix.</li>
+    <li>Free retest within 30 days of remediation.</li>
+  </ul>
+
+  <a class="cta" href="mailto:triju@vanguardcyberdefense.com?subject=Agent%20Security%20Audit%20Inquiry">Book an audit →</a>
+
+  <div class="footer">
+    Vanguard Cyber Defense · Triju Das, Founder &amp; CEO · <a href="mailto:triju@vanguardcyberdefense.com">triju@vanguardcyberdefense.com</a> · <a href="https://github.com/triju-vanguard-cyber-defense/vanguard-research">Public research</a>
+  </div>
+</div>
+</body>
+</html>
